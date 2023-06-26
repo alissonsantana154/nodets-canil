@@ -8,7 +8,7 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "start": "node dist/server.js",
+    "build": "node dist/server.js",
     "postinstall": "npm run tsc && copyfiles -u 1 src/**/*.mustache dist/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "npx nodemon -e ts,json,mustache src/server.ts"
